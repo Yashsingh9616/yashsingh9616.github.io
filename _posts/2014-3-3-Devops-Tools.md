@@ -1,11 +1,9 @@
 ---
 layout: post
-title: The most used devops tools
+title: Coredge Services
 ---
 
-- **Git**
-- **Ansible** 
-- **Docker**
-- **K8S**
-- **Jenkins**
-- **Grafana**
+- **Cloud Services**
+- **IT Infrastructure** 
+- **Enterprise Software Development**
+- **Business to Business**

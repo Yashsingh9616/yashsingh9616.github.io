@@ -16,12 +16,12 @@ date: 2024-06-03
   - **What the kernel does**
     ---
      The kernel has 4 jobs:
-     1. Memory management: Keep track of how much memory is used to store what, and 
+     1. **Memory management:** Keep track of how much memory is used to store what, and 
         where.
-     2. Process management: Determine which processes can use the central processing 
+     2. **Process management:** Determine which processes can use the central processing 
         unit (CPU), when, and for how long
-     3. Device drivers: Act as mediator/interpreter between the hardware and processes
-     4. System calls and security: Receive requests for service from the processes
+     3. **Device drivers:** Act as mediator/interpreter between the hardware and processes
+     4. **System calls and security:** Receive requests for service from the processes
     ---
 - **How to check the kernel version?**
    ---
@@ -38,11 +38,13 @@ date: 2024-06-03
 - **Types of kernal**
    ---
     - 1. Monolithic kernal
-          Description: The kernel that manages the system's resources between the system application and the system hardware is known as the Monolithic kernel. Here, the kernel and user services are implemented and run in the same address space.
-          Examples: Linux, Unix.
+          - Description: The kernel that manages the system's resources between the system application and,
+            the system hardware is known as the Monolithic kernel. Here, the kernel and user services are implemented and run in the same address space.
+          - Examples: Linux, Unix.
     - 2. Micro kernal
-          Description: Minimizes the amount of code running in kernel mode. Essential services such as device drivers, protocol stacks, and file systems run in user space.
-          Examples: Minix, QNX
+          - Description: Minimizes the amount of code running in kernel mode. Essential services such as,
+            device drivers, protocol stacks, and file systems run in user space.
+          - Examples: Minix, QNX
    ---
 - **What is FOSS?**
    ---
@@ -74,15 +76,15 @@ date: 2024-06-03
 
 - **Commands used in the shell**
    ---
-    - date: To show date with time.
-    - echo: A way to communicate with your Linux terminal.
-    - which: It searches the PATH environment variable for the executable file. 
-    - ls: Lists all the files and directories under a specified directory.
-    - ls -a: Lists all the files and directories with hidden.
-    - ls -l: Lists all the files and directories with longlist.
-    - cat: To read and copy the content of a file into another file. 
-    - pwd: Print working directory.
-    - cd: To change directory.
+    - **date:** To show date with time.
+    - **echo:** A way to communicate with your Linux terminal.
+    - **which:** It searches the PATH environment variable for the executable file. 
+    - **ls:** Lists all the files and directories under a specified directory.
+    - **ls** -a: Lists all the files and directories with hidden.
+    - **ls** -l: Lists all the files and directories with longlist.
+    - **cat:** To read and copy the content of a file into another file. 
+    - **pwd:** Print working directory.
+    - **cd:** To change directory.
    ---
 
 - **Shell Script**
@@ -94,24 +96,25 @@ date: 2024-06-03
    ---
     - PuTTY is a free and open-source terminal emulator, serial console, and network file transfer application. 
       It supports various network protocols, including SSH, Telnet, rlogin, and SCP. PuTTY is primarily used for securely connecting to remote servers and network devices.
-   Features:
+   - Features:
     - Terminal Emulation
     - Protocol Support
     - Session Management
     - Customization
-   Uses:
+   - Uses:
     - Remote Server Management
     - Remote Server Management
 - **PuTTYgen**
    ---
     - PuTTYgen is a key generator tool for creating SSH keys, which are used to secure SSH connections.
-   Features:
+   - Features:
     - Key Generation
     - Key Conversion
-   Uses:
+   - Uses:
     - SSH Key Generation
     - Key Management
     - Key Conversion
 
 - # 05-06-2024
+
 

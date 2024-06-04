@@ -11,8 +11,7 @@ date: 2024-06-03
        its processes.
      - It communicates between the 2, managing resources as efficiently as possible.
      - The kernel is so named because—like a seed inside a hard shell—it exists within the 
-     - OS and controls all the major functions of the hardware, whether it’s a phone, laptop, 
-     - server, or any other kind of computer.
+     - OS and controls all the major functions of the hardware, whether it’s a phone, laptop, server, or any other kind of computer.
 
   - **What the kernel does**
     ---

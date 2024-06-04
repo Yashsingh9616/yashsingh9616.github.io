@@ -24,3 +24,10 @@ date: 2024-06-03
      3. Device drivers: Act as mediator/interpreter between the hardware and processes
      4. System calls and security: Receive requests for service from the processes
     ---
+- **How to check the kernel version?**
+   ---
+    - To check kernel function name: --
+    - root@localhost ~]# uname -r
+    - 5.14.0-284.11.1.el9_2.x86_64
+   ---
+

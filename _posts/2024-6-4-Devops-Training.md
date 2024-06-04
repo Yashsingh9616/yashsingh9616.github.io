@@ -86,4 +86,32 @@ date: 2024-06-03
    ---
 
 - **Shell Script**
+   ---
+    - Shell scripting is a powerful way to automate tasks in Unix-based operating systems, including Linux,
+      and macOS. It involves writing scripts using shell commands to perform a sequence of operations automatically. Shell scripts can simplify complex tasks, automate repetitive tasks, and enhance productivity.
+
+- **PuTTY**
+   ---
+    - PuTTY is a free and open-source terminal emulator, serial console, and network file transfer application. 
+      It supports various network protocols, including SSH, Telnet, rlogin, and SCP. PuTTY is primarily used for securely connecting to remote servers and network devices.
+   Features:
+    - Terminal Emulation
+    - Protocol Support
+    - Session Management
+    - Customization
+   Uses:
+    - Remote Server Management
+    - Remote Server Management
+- **PuTTYgen**
+   ---
+    - PuTTYgen is a key generator tool for creating SSH keys, which are used to secure SSH connections.
+   Features:
+    - Key Generation
+    - Key Conversion
+   Uses:
+    - SSH Key Generation
+    - Key Management
+    - Key Conversion
+
+- # 05-06-2024
 

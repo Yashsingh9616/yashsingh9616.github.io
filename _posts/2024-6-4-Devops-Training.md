@@ -70,7 +70,7 @@ date: 2024-06-03
      3. The best part of WordPress is you can create any type of website with WordPress from blog websites,
         to e-commerce to business and portfolio websites or anything.
 
-- **04-06-2024**
+- # 04-06-2024 #
 
 - **Commands used in the shell**
    ---

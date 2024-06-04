@@ -29,4 +29,9 @@ date: 2024-06-03
     - root@localhost ~]# uname -r
     - 5.14.0-284.11.1.el9_2.x86_64
    ---
-
+- **what is shell in linux?**
+   ---
+    -  A command line is a text-based interface which can be used to input instructions to a 
+       computer system. 
+       The Linux command line is provided by a program called the shell. Over the long history of UNIX-like systems, many shells have been developed.
+   ---

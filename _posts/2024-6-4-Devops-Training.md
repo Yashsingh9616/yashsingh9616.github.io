@@ -29,9 +29,61 @@ date: 2024-06-03
     - root@localhost ~]# uname -r
     - 5.14.0-284.11.1.el9_2.x86_64
    ---
-- **what is shell in linux?**
+- **What is shell in linux?**
    ---
     -  A command line is a text-based interface which can be used to input instructions to a 
        computer system. 
        The Linux command line is provided by a program called the shell. Over the long history of UNIX-like systems, many shells have been developed.
    ---
+- **Types of kernal**
+   ---
+    - 1. Monolithic kernal
+          Description: The kernel that manages the system's resources between the system application and the system hardware is known as the Monolithic kernel. Here, the kernel and user services are implemented and run in the same address space.
+          Examples: Linux, Unix.
+    - 2. Micro kernal
+          Description: Minimizes the amount of code running in kernel mode. Essential services such as device drivers, protocol stacks, and file systems run in user space.
+          Examples: Minix, QNX
+   ---
+- **What is FOSS?**
+   ---
+    - FOSS means Free and Open Source Software. It doesn’t mean the software is free of cost. 
+      It means that the software's source code is open for all and anyone is free to use, study and modify the code.
+      This principle allows others to contribute to developing and improving a software like a community.
+- **What is Open Source Software?**
+   ---
+    - Open Source Software is something that you can modify as per your needs, and share with others without,
+      any licensing violation burden. When we say Open Source, the source code of the software is available,
+      publicly with Open Source licenses like GNU (GPL) which allows you to edit the source code and distribute it.
+
+- **What is Jekyll?**
+   ---
+    - 1. Jekyll theme is a static website generator that is designed for building minimal, static blogs and pages
+         to be hosted on GitHub Pages. With the help of Jekyll, it strips everything down to the bare minimum, eliminating a lot of complexity. We can easily transform our plain text into static website pages and blogs.
+      2. The main advantage of Jekyll is it requires no database and CMS systems or any updates like in the case,
+         of WordPress. It supports static HTML, CSS, JavaScript, and even Markdown, so with the help of markdown, you can create awesome blog posts. What’s best is it goes well with GitHub-Pages and It loads faster.
+
+- **What is WordPress?**
+  ---
+   - 1. Simply, WordPress is a web publishing software that is used to create beautiful websites or blog websites.
+     2. On a more high level, WordPress is a content management system written in PHP that uses a MySQL database. 
+        In Layman’s language, WordPress is the simplest and most powerful blogging and website builder as WordPress powers over 43% of all the websites on the Internet in existence today plus WordPress is an open-source content management system licensed under GPLv2.
+     3. The best part of WordPress is you can create any type of website with WordPress from blog websites,
+        to e-commerce to business and portfolio websites or anything.
+
+- **04-06-2024**
+
+- **Commands used in the shell**
+   ---
+    - date: To show date with time.
+    - echo: A way to communicate with your Linux terminal.
+    - which: It searches the PATH environment variable for the executable file. 
+    - ls: Lists all the files and directories under a specified directory.
+    - ls -a: Lists all the files and directories with hidden.
+    - ls -l: Lists all the files and directories with longlist.
+    - cat: To read and copy the content of a file into another file. 
+    - pwd: Print working directory.
+    - cd: To change directory.
+   ---
+
+- **Shell Script**
+

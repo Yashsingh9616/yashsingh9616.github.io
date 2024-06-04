@@ -5,3 +5,4 @@ date: 2024-06-03
 ---
 
 **This is my training content!**
+SHELL

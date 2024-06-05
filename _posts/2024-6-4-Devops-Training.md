@@ -121,9 +121,7 @@ date: 2024-06-03
    ---
     - Vim (Vi IMproved) is a highly configurable text editor built to enable efficient text editing. It is,
       an enhanced version of the older vi editor, and it is commonly used in the Unix and Linux environments. Vim is known for its powerful features and extensive customization options, which make it a favorite among programmers and system administrators.
-
-- **Data Wrangling**
-   ---
+      
     - Functions and Features of Vim
      - Modes: Vim operates in several modes, each serving a different purpose:
       - Normal Mode: The default mode for navigation and manipulation of text.
@@ -139,4 +137,5 @@ date: 2024-06-03
      - gg: Go to the top of the file.
      - G: Go to the bottom of the file.
 
+- **Data Wrangling**
 

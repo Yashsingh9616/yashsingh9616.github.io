@@ -80,8 +80,8 @@ date: 2024-06-03
     - **echo:** A way to communicate with your Linux terminal.
     - **which:** It searches the PATH environment variable for the executable file. 
     - **ls:** Lists all the files and directories under a specified directory.
-    - **ls** -a: Lists all the files and directories with hidden.
-    - **ls** -l: Lists all the files and directories with longlist.
+    - **ls -a:** Lists all the files and directories with hidden.
+    - **ls -l:** Lists all the files and directories with longlist.
     - **cat:** To read and copy the content of a file into another file. 
     - **pwd:** Print working directory.
     - **cd:** To change directory.
@@ -117,4 +117,8 @@ date: 2024-06-03
 
 - # 05-06-2024
 
+- **Vim (Editors)**
+   ---
+    - Vim (Vi IMproved) is a highly configurable text editor built to enable efficient text editing. It is,
+      an enhanced version of the older vi editor, and it is commonly used in the Unix and Linux environments. Vim is known for its powerful features and extensive customization options, which make it a favorite among programmers and system administrators.
 

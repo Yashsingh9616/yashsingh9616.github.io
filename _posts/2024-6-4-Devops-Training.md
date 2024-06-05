@@ -122,3 +122,21 @@ date: 2024-06-03
     - Vim (Vi IMproved) is a highly configurable text editor built to enable efficient text editing. It is,
       an enhanced version of the older vi editor, and it is commonly used in the Unix and Linux environments. Vim is known for its powerful features and extensive customization options, which make it a favorite among programmers and system administrators.
 
+- **Data Wrangling**
+   ---
+    - Functions and Features of Vim
+     - Modes: Vim operates in several modes, each serving a different purpose:
+      - Normal Mode: The default mode for navigation and manipulation of text.
+      - Insert Mode: Mode for inserting text.
+      - Visual Mode: Mode for selecting blocks of text.
+      - Command-Line Mode: Mode for executing commands.
+    - Basic Vim Commands and Shortcuts
+     - h, j, k, l: Move left, down, up, right.
+     - w: Jump to the next word.
+     - b: Jump to the previous word.
+     - 0: Move to the beginning of the line.
+     - $: Move to the end of the line.
+     - gg: Go to the top of the file.
+     - G: Go to the bottom of the file.
+
+

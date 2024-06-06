@@ -125,8 +125,8 @@ date: 2024-06-03
       echo "Hello, $NAME!"
    
    Step 5: Conditional Statements
-    Conditional statements allow the script to make decisions based on certain conditions.
-    if-else
+    - Conditional statements allow the script to make decisions based on certain conditions.
+      if-else
     - #!/bin/bash
 
       echo "Enter a number: "
@@ -154,8 +154,8 @@ date: 2024-06-03
       esac
 
    Step 6: Loops
-    Loops are used to execute a block of code repeatedly.
-     for Loop
+    - Loops are used to execute a block of code repeatedly.
+      for Loop
       - #!/bin/bash
 
        for i in {1..5}
@@ -175,7 +175,7 @@ date: 2024-06-03
         done
 
    Step 7: Functions
-    Functions are reusable blocks of code that can be called with a name.
+    - Functions are reusable blocks of code that can be called with a name.
     - #!/bin/bash
 
       # Function definition
@@ -188,8 +188,8 @@ date: 2024-06-03
       greet "Bob"
    
    Step 8: File Operations
-    Shell scripts can perform various file operations like reading, writing, and copying files.
-    Reading a File
+    - Shell scripts can perform various file operations like reading, writing, and copying files.
+      Reading a File
     - #!/bin/bash
 
       FILE="sample.txt"
@@ -199,19 +199,19 @@ date: 2024-06-03
         echo "$line"
       done < "$FILE"
 
-    Writing to a File
+      Writing to a File
      - #!/bin/bash
 
        echo "This is a sample text" > output.txt
        echo "Appending text" >> output.txt
 
-    Copying a File
+      Copying a File
      - #!/bin/bash
 
        cp source.txt destination.txt
 
    Step 9: Command Line Arguments
-    Shell scripts can accept arguments from the command line.
+    - Shell scripts can accept arguments from the command line.
     - #!/bin/bash
 
        echo "Script name: $0"
@@ -219,11 +219,9 @@ date: 2024-06-03
        echo "Second argument: $2"
 
    Step 10: Error Handling
-    Handle errors using exit statuses and error messages.
+    - Handle errors using exit statuses and error messages.
     - #!/bin/bash
-
        FILE="nonexistent.txt"
-
          if [ -f "$FILE" ]; then
             echo "File exists."
          else

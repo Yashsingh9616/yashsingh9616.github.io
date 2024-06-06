@@ -92,6 +92,92 @@ date: 2024-06-03
     - Shell scripting is a powerful way to automate tasks in Unix-based operating systems, including Linux,
       and macOS. It involves writing scripts using shell commands to perform a sequence of operations automatically. Shell scripts can simplify complex tasks, automate repetitive tasks, and enhance productivity.
 
+   Step 1: Shebang and Script Initialization
+    - #!/bin/bash
+
+   Step 2: Variables
+    - #!/bin/bash
+
+      # Variable declaration
+      NAME="John"
+      AGE=30
+      echo "My name is $NAME and I am $AGE years old."
+
+   Step 3: Comments
+    - #!/bin/bash
+
+      # This is a single-line comment
+      :'
+      This is a multi-line comment.
+      It can span multiple lines.
+      '
+      OR
+      <<comments
+      This is second comment.
+      It is multiple lines.
+      comments
+
+   Step 4: Input and Output
+    - #!/bin/bash
+
+      echo "Enter your name: "
+      read NAME
+      echo "Hello, $NAME!"
+   
+   Step 5: Conditional Statements
+    Conditional statements allow the script to make decisions based on certain conditions.
+    if-else
+    - #!/bin/bash
+
+      echo "Enter a number: "
+      read NUMBER
+
+      if [ $NUMBER -gt 10 ]; then
+         echo "The number is greater than 10."
+      else
+         echo "The number is less than or equal to 10."
+      fi
+
+    case
+    - #!/bin/bash
+
+      echo "Enter a letter: "
+      read LETTER
+
+      case $LETTER in
+         [a-z] )
+            echo "You entered a lowercase letter." ;;
+         [A-Z] )
+            echo "You entered an uppercase letter." ;;
+        * )
+            echo "You entered a non-alphabetic character." ;;
+      esac
+
+Step 6: Loops
+ Loops are used to execute a block of code repeatedly.
+ for Loop
+ - #!/bin/bash
+
+   for i in {1..5}
+   do
+      echo "Iteration $i"
+   done
+
+ while Loop
+  - #!/bin/bash
+
+    COUNTER=1
+
+    while [ $COUNTER -le 5 ]
+    do
+       echo "Iteration $COUNTER"
+       ((COUNTER++))
+    done
+
+Step 7: Functions
+ Functions are reusable blocks of code that can be called with a name.
+
+
 - **PuTTY**
    ---
     - PuTTY is a free and open-source terminal emulator, serial console, and network file transfer application. 
@@ -118,11 +204,12 @@ date: 2024-06-03
 - # 05-06-2024
 
 - **Vim (Editors)**
+   
    ---
     - Vim (Vi IMproved) is a highly configurable text editor built to enable efficient text editing. It is,
       an enhanced version of the older vi editor, and it is commonly used in the Unix and Linux environments. Vim is known for its powerful features and extensive customization options, which make it a favorite among programmers and system administrators.
-      
-    - Functions and Features of Vim
+
+    - Functions and Features of Vim 
      - Modes: Vim operates in several modes, each serving a different purpose:
       - Normal Mode: The default mode for navigation and manipulation of text.
       - Insert Mode: Mode for inserting text.
@@ -138,4 +225,8 @@ date: 2024-06-03
      - G: Go to the bottom of the file.
 
 - **Data Wrangling**
+
+- **yash**
+   ---
+    - 
 

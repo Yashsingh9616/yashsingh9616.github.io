@@ -189,7 +189,7 @@ date: 2024-06-03
    
    Step 8: File Operations
     - Shell scripts can perform various file operations like reading, writing, and copying files.
-      Reading a File
+    - Reading a File
     - #!/bin/bash
 
       FILE="sample.txt"
@@ -199,13 +199,13 @@ date: 2024-06-03
         echo "$line"
       done < "$FILE"
 
-      Writing to a File
+    - Writing to a File
      - #!/bin/bash
 
        echo "This is a sample text" > output.txt
        echo "Appending text" >> output.txt
 
-      Copying a File
+    - Copying a File
      - #!/bin/bash
 
        cp source.txt destination.txt
@@ -221,7 +221,7 @@ date: 2024-06-03
    Step 10: Error Handling
     - Handle errors using exit statuses and error messages.
     - #!/bin/bash
-       FILE="nonexistent.txt"
+        FILE="nonexistent.txt"
          if [ -f "$FILE" ]; then
             echo "File exists."
          else
@@ -279,7 +279,5 @@ date: 2024-06-03
 
 - **Data Wrangling**
 
-- **yash**
-   ---
-    - 
+- # 06-06-2024
 

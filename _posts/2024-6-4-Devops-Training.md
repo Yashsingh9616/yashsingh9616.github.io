@@ -153,29 +153,30 @@ date: 2024-06-03
             echo "You entered a non-alphabetic character." ;;
       esac
 
-Step 6: Loops
- Loops are used to execute a block of code repeatedly.
- for Loop
- - #!/bin/bash
+   Step 6: Loops
+    Loops are used to execute a block of code repeatedly.
+     for Loop
+      - #!/bin/bash
 
-   for i in {1..5}
-   do
-      echo "Iteration $i"
-   done
+       for i in {1..5}
+       do
+          echo "Iteration $i"
+       done
 
- while Loop
-  - #!/bin/bash
+      while Loop
+      - #!/bin/bash
 
-    COUNTER=1
+        COUNTER=1
 
-    while [ $COUNTER -le 5 ]
-    do
-       echo "Iteration $COUNTER"
-       ((COUNTER++))
-    done
+        while [ $COUNTER -le 5 ]
+        do
+          echo "Iteration $COUNTER"
+         ((COUNTER++))
+        done
 
-Step 7: Functions
- Functions are reusable blocks of code that can be called with a name.
+   Step 7: Functions
+    Functions are reusable blocks of code that can be called with a name.
+  
 
 
 - **PuTTY**

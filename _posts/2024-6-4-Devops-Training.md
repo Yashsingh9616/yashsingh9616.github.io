@@ -224,13 +224,16 @@ date: 2024-06-03
 
        FILE="nonexistent.txt"
 
-       if [ -f "$FILE" ]; then
-          echo "File exists."
-       else
-          echo "File does not exist."
-          exit 1
-       fi
+         if [ -f "$FILE" ]; then
+            echo "File exists."
+         else
+            echo "File does not exist."
+            exit 1
+         fi
 
+
+
+  
 
    
 

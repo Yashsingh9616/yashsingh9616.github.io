@@ -34,13 +34,13 @@ date: 2024-06-03
     - 5.14.0-284.11.1.el9_2.x86_64
    ---
    ---
-- **Types of kernal**
+- **Types of kernel**
    ---
-    - 1. Monolithic kernal
+    - 1. Monolithic kernel
           - Description: The kernel that manages the system's resources between the system application and,
             the system hardware is known as the Monolithic kernel. Here, the kernel and user services are implemented and run in the same address space.
           - Examples: Linux, Unix.
-    - 2. Micro kernal
+    - 2. Micro kernel
           - Description: Minimizes the amount of code running in kernel mode. Essential services such as,
             device drivers, protocol stacks, and file systems run in user space.
           - Examples: Minix, QNX
@@ -127,6 +127,29 @@ date: 2024-06-03
    ---
     - Shell scripting is a powerful way to automate tasks in Unix-based operating systems, including Linux,
       and macOS. It involves writing scripts using shell commands to perform a sequence of operations automatically. Shell scripts can simplify complex tasks, automate repetitive tasks, and enhance productivity.
+
+   - Features of Shell Scripting
+    - 
+   - Automation:
+      - Automates repetitive tasks.
+      - Schedules tasks using cron jobs.
+
+   - Efficiency:
+      - Reduces manual effort.
+      - Speeds up the execution of tasks.
+ 
+   - Flexibility:
+      - Scripts can be modified to handle different tasks.
+      - Supports conditional statements and loops.
+
+   - Uses of Shell Scripting
+
+     - System Administration
+     - File Management
+     - Networking
+     - Development
+     - Data Processing
+
 
    **Step 1:** Shebang and Script Initialization
     - #!/bin/bash
@@ -271,47 +294,83 @@ date: 2024-06-03
    ---
     - PuTTY is a free and open-source terminal emulator, serial console, and network file transfer application. 
       It supports various network protocols, including SSH, Telnet, rlogin, and SCP. PuTTY is primarily used for securely connecting to remote servers and network devices.
-   - Features:
-    - Terminal Emulation
-    - Protocol Support
-    - Session Management
-    - Customization
-   - Uses:
-    - Remote Server Management
-    - Remote Server Management
+   - **Features:**
+      - Terminal Emulation
+      - Protocol Support
+      - Session Management
+      - Customization
+   - **Uses:**
+      - Remote Server Management
+      - Remote Server Management
 - **PuTTYgen**
    ---
     - PuTTYgen is a key generator tool for creating SSH keys, which are used to secure SSH connections.
-   - Features:
-    - Key Generation
-    - Key Conversion
-   - Uses:
-    - SSH Key Generation
-    - Key Management
-    - Key Conversion
+   - **Features:**
+      - Key Generation
+      - Key Conversion
+   - **Uses:**
+      - SSH Key Generation
+      - Key Management
+      - Key Conversion
 
 - # 05-06-2024
 
-- **Vim (Editors)**
+- # **Vim (Editors)**
    
    ---
     - Vim (Vi IMproved) is a highly configurable text editor built to enable efficient text editing. It is,
       an enhanced version of the older vi editor, and it is commonly used in the Unix and Linux environments. Vim is known for its powerful features and extensive customization options, which make it a favorite among programmers and system administrators.
 
     - Functions and Features of Vim 
-     - Modes: Vim operates in several modes, each serving a different purpose:
-      - Normal Mode: The default mode for navigation and manipulation of text.
-      - Insert Mode: Mode for inserting text.
-      - Visual Mode: Mode for selecting blocks of text.
-      - Command-Line Mode: Mode for executing commands.
-    - Basic Vim Commands and Shortcuts
-     - h, j, k, l: Move left, down, up, right.
-     - w: Jump to the next word.
-     - b: Jump to the previous word.
-     - 0: Move to the beginning of the line.
-     - $: Move to the end of the line.
-     - gg: Go to the top of the file.
-     - G: Go to the bottom of the file.
+     - 1. **Modes:** Vim operates in several modes, each serving a different purpose:
+           - Normal Mode: The default mode for navigation and manipulation of text.
+           - Insert Mode: Mode for inserting text.
+           - Visual Mode: Mode for selecting blocks of text.
+           - Command-Line Mode: Mode for executing commands.
+
+     - 2. **Editing:**
+           - i, a, o: Enter insert mode at different positions (before the cursor, after the cursor, on a new line).
+           - d, c, y: Delete, change, and yank (copy) text.
+           - p, P: Paste text after or before the cursor.
+
+     - 3. **Deleting and Changing Text**
+           - x: Delete character under the cursor.
+           - dd: Delete the current line.
+           - dw: Delete the current word.
+           - d$: Delete to the end of the line.
+           - cw: Change the current word.
+           - c$: Change to the end of the line.
+
+     - 4. **Copying and Pasting**
+           - yy: Yank (copy) the current line. 
+           - yw: Yank the current word.
+           - p: Paste after the cursor.
+           - P: Paste before the cursor.
+
+     - 5. **Saving and Exiting**
+           - :w: Save the file.
+           - :q: Quit Vim.
+           - :wq: Save and quit.
+           - :q!: Quit without saving.
+           - ZZ: Save and quit (shortcut for :wq).
+           - :e filename: Open a new file.
+           - :split, :vsplit: Split the window horizontally or vertically.
+
+
+     - 6. **Navigation:**
+           - h, j, k, l: Move left, down, up, right. 
+           - w, b: Move to the start of the next or previous word.
+           - 0, $: Move to the beginning or end of the line.
+           - gg: Go to the top of the file.
+           - G: Go to the bottom of the file.
+
+     - 7. **Undo/Redo:**
+           - u: Undo And Ctrl-r: Redo.
+
+     - 8. **Search and Replace:**
+          - /pattern: Search for a pattern.
+          - :s/old/new/g: Substitute old text with new text.
+
 
 - **Data Wrangling**
 

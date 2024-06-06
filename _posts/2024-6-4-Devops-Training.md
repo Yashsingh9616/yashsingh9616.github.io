@@ -66,10 +66,10 @@ date: 2024-06-03
     - 2. Text Processing:
 
          - cat: Concatenate and display file content.
-         -grep: Search text using patterns.
-         -awk: Pattern scanning and processing language.
-         -sed: Stream editor for filtering and transforming text.
-         -wc: Word, line, character, and byte count.
+         - grep: Search text using patterns.
+         - awk: Pattern scanning and processing language.
+         - sed: Stream editor for filtering and transforming text.
+         - wc: Word, line, character, and byte count.
           
     - 3. System Monitoring:
 
@@ -122,8 +122,6 @@ date: 2024-06-03
         to e-commerce to business and portfolio websites or anything.
 
 - # 04-06-2024 #
-
-   ---
 
 - # **Shell Script**
    ---

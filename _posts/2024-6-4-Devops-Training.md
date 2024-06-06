@@ -233,14 +233,6 @@ date: 2024-06-03
 
 
 
-  
-
-   
-
-
-  
-
-
 - **PuTTY**
    ---
     - PuTTY is a free and open-source terminal emulator, serial console, and network file transfer application. 

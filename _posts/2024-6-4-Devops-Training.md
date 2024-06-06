@@ -5,6 +5,9 @@ date: 2024-06-03
 ---
 
 **This is my training content!**
+
+- **First Week In Month Of June**
+
 - # **(03-06-2024)**
 
 - **What is kernel and its functions?**
@@ -318,8 +321,10 @@ date: 2024-06-03
 - # **Vim (Editors)**
    
    ---
-    - Vim (Vi IMproved) is a highly configurable text editor built to enable efficient text editing. It is,
-      an enhanced version of the older vi editor, and it is commonly used in the Unix and Linux environments. Vim is known for its powerful features and extensive customization options, which make it a favorite among programmers and system administrators.
+    - Vim (Vi IMproved) is a highly configurable text editor built to enable efficient text editing.
+      It is, an enhanced version of the older vi editor, and it is commonly used in the Unix and,
+      Linux environments. Vim is known for its powerful features and extensive customization options,
+      which make it a favorite among programmers and system administrators.
 
     - Functions and Features of Vim 
      - 1. **Modes:** Vim operates in several modes, each serving a different purpose:
@@ -376,9 +381,9 @@ date: 2024-06-03
 
 - # 06-06-2024
 
- - **Command-Line Environment**
+ - # **Command-Line Environment**
 
- - **Git**
+ - # **Git**
 
 
 - # 07-06-2024

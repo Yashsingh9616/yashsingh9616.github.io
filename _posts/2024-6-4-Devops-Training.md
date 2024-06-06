@@ -5,7 +5,7 @@ date: 2024-06-03
 ---
 
 **This is my training content!**
-- **(03-06-2024)**
+- # **(03-06-2024)**
 
 - **What is kernel and its functions?**
     ---
@@ -23,9 +23,9 @@ date: 2024-06-03
      1. **Memory management:** Keep track of how much memory is used to store what, and 
         where.
      2. **Process management:** Determine which processes can use the central processing 
-        unit (CPU), when, and for how long
-     3. **Device drivers:** Act as mediator/interpreter between the hardware and processes
-     4. **System calls and security:** Receive requests for service from the processes
+        unit (CPU), when, and for how long.
+     3. **Device drivers:** Act as mediator/interpreter between the hardware and processes.
+     4. **System calls and security:** Receive requests for service from the processes.
     ---
 - **How to check the kernel version?**
    ---
@@ -46,7 +46,7 @@ date: 2024-06-03
           - Examples: Minix, QNX
    ---
 
-- **What is shell in linux?**
+- # **What is shell in linux?**
    ---
     -  A command line is a text-based interface which can be used to input instructions to a 
        computer system. 
@@ -57,41 +57,41 @@ date: 2024-06-03
    ---
     - 1. File Operations:
 
-          ls: List directory contents.
-          cp: Copy files or directories.
-          mv: Move or rename files or directories.
-          rm: Remove files or directories.
-          touch: Create an empty file.
+         - ls: List directory contents.
+         - cp: Copy files or directories.
+         - mv: Move or rename files or directories.
+         - rm: Remove files or directories.
+         - touch: Create an empty file.
 
     - 2. Text Processing:
 
-          cat: Concatenate and display file content.
-          grep: Search text using patterns.
-          awk: Pattern scanning and processing language.
-          sed: Stream editor for filtering and transforming text.
-          wc: Word, line, character, and byte count.
+         - cat: Concatenate and display file content.
+         -grep: Search text using patterns.
+         -awk: Pattern scanning and processing language.
+         -sed: Stream editor for filtering and transforming text.
+         -wc: Word, line, character, and byte count.
           
     - 3. System Monitoring:
 
-          top: Display tasks and system status.
-          ps: Report a snapshot of current processes.
-          df: Report file system disk space usage.
-          du: Estimate file space usage.
+         - top: Display tasks and system status.
+         - ps: Report a snapshot of current processes.
+         - df: Report file system disk space usage.
+         - du: Estimate file space usage.
    
    - 4. Networking:
 
-          ping: Check the network connection to a server.
-          ifconfig: Configure a network interface.
-          scp: Securely copy files between hosts.
-          ssh: Secure Shell for remote login.
+         - ping: Check the network connection to a server.
+         - ifconfig: Configure a network interface.
+         - scp: Securely copy files between hosts.
+         - ssh: Secure Shell for remote login.
 
    - 5. Scripting Specific:
 
-          echo: Display a line of text.
-          read: Read a line of input.
-          #!/bin/bash: Shebang to specify the script's interpreter.
-          chmod +x script.sh: Make a script executable.
-          ./script.sh: Execute the script.
+         - echo: Display a line of text.
+         - read: Read a line of input.
+         - #!/bin/bash: Shebang to specify the script's interpreter.
+         - chmod +x script.sh: Make a script executable.
+         - ./script.sh: Execute the script.
 
 
 

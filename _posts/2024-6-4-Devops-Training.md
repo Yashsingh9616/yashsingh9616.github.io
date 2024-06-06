@@ -4,14 +4,18 @@ title: "Devops Engineer Training"
 date: 2024-06-03
 ---
 
-**This is my training content!**(03-06-2024)
+**This is my training content!**
+**(03-06-2024)**
+
 - **What is kernel and its functions?**
     ---
-     - The Linux® kernel is the main component of a Linux operating system (OS) and is the core interface between a computer’s hardware and 
+     - The Linux® kernel is the main component of a Linux operating system (OS) and is the core interface between,
+       a computer’s hardware and 
        its processes.
      - It communicates between the 2, managing resources as efficiently as possible.
      - The kernel is so named because—like a seed inside a hard shell—it exists within the 
-     - OS and controls all the major functions of the hardware, whether it’s a phone, laptop, server, or any other kind of computer.
+     - OS and controls all the major functions of the hardware, whether it’s a phone, laptop, server, or any,
+       other kind of computer.
 
   - **What the kernel does**
     ---
@@ -281,6 +285,8 @@ date: 2024-06-03
 
 - # 06-06-2024
 
- **Command-Line Environment**
- 
+ - **Command-Line Environment**
+
+ - **Git**
+
 

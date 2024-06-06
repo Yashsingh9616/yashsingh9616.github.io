@@ -33,11 +33,6 @@ date: 2024-06-03
     - root@localhost ~]# uname -r
     - 5.14.0-284.11.1.el9_2.x86_64
    ---
-- **What is shell in linux?**
-   ---
-    -  A command line is a text-based interface which can be used to input instructions to a 
-       computer system. 
-       The Linux command line is provided by a program called the shell. Over the long history of UNIX-like systems, many shells have been developed.
    ---
 - **Types of kernal**
    ---
@@ -50,6 +45,56 @@ date: 2024-06-03
             device drivers, protocol stacks, and file systems run in user space.
           - Examples: Minix, QNX
    ---
+
+- **What is shell in linux?**
+   ---
+    -  A command line is a text-based interface which can be used to input instructions to a 
+       computer system. 
+       The Linux command line is provided by a program called the shell. Over the long history of UNIX-like systems, many shells have been developed.
+
+
+- **Common Shell Commands**
+   ---
+    - 1. File Operations:
+
+          ls: List directory contents.
+          cp: Copy files or directories.
+          mv: Move or rename files or directories.
+          rm: Remove files or directories.
+          touch: Create an empty file.
+
+    - 2. Text Processing:
+
+          cat: Concatenate and display file content.
+          grep: Search text using patterns.
+          awk: Pattern scanning and processing language.
+          sed: Stream editor for filtering and transforming text.
+          wc: Word, line, character, and byte count.
+          
+    - 3. System Monitoring:
+
+          top: Display tasks and system status.
+          ps: Report a snapshot of current processes.
+          df: Report file system disk space usage.
+          du: Estimate file space usage.
+   
+   - 4. Networking:
+
+          ping: Check the network connection to a server.
+          ifconfig: Configure a network interface.
+          scp: Securely copy files between hosts.
+          ssh: Secure Shell for remote login.
+
+   - 5. Scripting Specific:
+
+          echo: Display a line of text.
+          read: Read a line of input.
+          #!/bin/bash: Shebang to specify the script's interpreter.
+          chmod +x script.sh: Make a script executable.
+          ./script.sh: Execute the script.
+
+
+
 - **What is FOSS?**
    ---
     - FOSS means Free and Open Source Software. It doesn’t mean the software is free of cost. 
@@ -78,28 +123,17 @@ date: 2024-06-03
 
 - # 04-06-2024 #
 
-- **Commands used in the shell**
-   ---
-    - **date:** To show date with time.
-    - **echo:** A way to communicate with your Linux terminal.
-    - **which:** It searches the PATH environment variable for the executable file. 
-    - **ls:** Lists all the files and directories under a specified directory.
-    - **ls -a:** Lists all the files and directories with hidden.
-    - **ls -l:** Lists all the files and directories with longlist.
-    - **cat:** To read and copy the content of a file into another file. 
-    - **pwd:** Print working directory.
-    - **cd:** To change directory.
    ---
 
-- **Shell Script**
+- # **Shell Script**
    ---
     - Shell scripting is a powerful way to automate tasks in Unix-based operating systems, including Linux,
       and macOS. It involves writing scripts using shell commands to perform a sequence of operations automatically. Shell scripts can simplify complex tasks, automate repetitive tasks, and enhance productivity.
 
-   Step 1: Shebang and Script Initialization
+   **Step 1:** Shebang and Script Initialization
     - #!/bin/bash
 
-   Step 2: Variables
+   **Step 2:** Variables
     - #!/bin/bash
 
       # Variable declaration
@@ -107,7 +141,7 @@ date: 2024-06-03
       AGE=30
       echo "My name is $NAME and I am $AGE years old."
 
-   Step 3: Comments
+   **Step 3:** Comments
     - #!/bin/bash
 
       # This is a single-line comment
@@ -121,14 +155,14 @@ date: 2024-06-03
       It is multiple lines.
       comments
 
-   Step 4: Input and Output
+   **Step 4:** Input and Output
     - #!/bin/bash
 
       echo "Enter your name: "
       read NAME
       echo "Hello, $NAME!"
    
-   Step 5: Conditional Statements
+   **Step 5:** Conditional Statements
     - Conditional statements allow the script to make decisions based on certain conditions.
       if-else
     - #!/bin/bash
@@ -157,7 +191,7 @@ date: 2024-06-03
             echo "You entered a non-alphabetic character." ;;
       esac
 
-   Step 6: Loops
+   **Step 6:** Loops
     - Loops are used to execute a block of code repeatedly.
       for Loop
       - #!/bin/bash
@@ -178,7 +212,7 @@ date: 2024-06-03
          ((COUNTER++))
         done
 
-   Step 7: Functions
+   **Step 7:** Functions
     - Functions are reusable blocks of code that can be called with a name.
     - #!/bin/bash
 
@@ -191,7 +225,7 @@ date: 2024-06-03
       greet "Alice"
       greet "Bob"
    
-   Step 8: File Operations
+   **Step 8:** File Operations
     - Shell scripts can perform various file operations like reading, writing, and copying files.
     - Reading a File
     - #!/bin/bash
@@ -214,7 +248,7 @@ date: 2024-06-03
 
        cp source.txt destination.txt
 
-   Step 9: Command Line Arguments
+   **Step 9:** Command Line Arguments
     - Shell scripts can accept arguments from the command line.
     - #!/bin/bash
 
@@ -222,7 +256,7 @@ date: 2024-06-03
        echo "First argument: $1"
        echo "Second argument: $2"
 
-   Step 10: Error Handling
+   **Step 10:** Error Handling
     - Handle errors using exit statuses and error messages.
     - #!/bin/bash
         FILE="nonexistent.txt"

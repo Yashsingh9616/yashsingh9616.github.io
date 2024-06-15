@@ -435,21 +435,21 @@ date: 2024-06-03
       - SIGCONT (18): Continue a paused process.
 
      - Practical Example
-      - Run a job in the background:
-       - sleep 500 &
+       - Run a job in the background:
+         - sleep 500 &
 
-      - List jobs to get the job number:
-       - jobs
+       - List jobs to get the job number:
+         - jobs
 
-      - Suspend the job:
-       - Ctrl + Z
+       - Suspend the job:
+         - Ctrl + Z
 
-      - Resume the job in the background:
-       - bg %1
+       - Resume the job in the background:
+         - bg %1
 
-      - Kill the job by finding its PID:
-       - ps aux | grep sleep
-         kill 1234  # Replace 1234 with the actual PID
+       - Kill the job by finding its PID:
+         - ps aux | grep sleep
+           kill 1234  # Replace 1234 with the actual PID
 
      - Terminal Multiplexer
       - A terminal multiplexer is a tool that allows you to manage multiple terminal sessions from a single,

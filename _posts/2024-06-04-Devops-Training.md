@@ -588,12 +588,43 @@ date: 2024-06-03
  
        - **Command: SSH (Secure Shell)**
          
-         - 1. Connecting to a Remote Machine:
+         - 1. **Connecting to a Remote Machine:**
              - ssh username@hostname_or_ip_address
 
-         - 2. Executing Commands on a Remote Machine:
-             - ssh username@hostname_or_ip_address 'command_to_execute'
+         - 2. **Executing Commands on a Remote Machine:**
+             - ssh john@example.com 'ls -l /home/john'
 
-         - 3. Copying Files to/from a Remote Machine:
-             -  
+         - 3. **Copying Files to/from a Remote Machine:**
+          
+           - Copying from local to remote:
+             - scp /home/user/file.txt john@example.com:/home/john/
+
+           - Copying from remote to local:
+             - scp john@example.com:/home/john/file.txt /home/user/
+
+        - **Generating SSH Key Pair**
+          
+          - 1. **Generate SSH Key Pair**
+           - Use the ssh-keygen command to generate a new SSH key pair. This command will create a public,
+             key (id_rsa.pub) and a private key (id_rsa) in the ~/.ssh/ directory by default.
+
+            - ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+          -2. **Copy the Public Key to Remote Machine**
+           - After generating the key pair, you need to copy the public key (id_rsa.pub) to the remote,
+             machine's ~/.ssh/authorized_keys file. This step allows you to authenticate using your private key without entering a password.
+
+           - ssh-copy-id username@hostname_or_ip_address
+
+          - If ssh-copy-id is not available on your system, you can manually append the contents of,
+            ~/.ssh/id_rsa.pub to ~/.ssh/authorized_keys on the remote machine.
+ 
+           - cat ~/.ssh/id_rsa.pub | ssh username@hostname_or_ip_address 'mkdir -p ~/.ssh &&,
+             cat >> ~/.ssh/ authorized_keys'
+
+
+
+         
+ 
+
           

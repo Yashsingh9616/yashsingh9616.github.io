@@ -6,7 +6,7 @@ date: 2024-06-03
 
 **This is my training content!**
 
-- **First Week In Month Of June**
+- # **Month Of June**
 
 - # **(03-06-2024)**
 

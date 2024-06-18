@@ -2,6 +2,8 @@
  layout: post
  title: Data-Wrangling
 ---
+  # 06-06-2024 
+
  - # Data Wrangling 
  - Data wrangling in Linux refers to the process of cleaning, transforming, and organizing raw data into,
    a more usable format using various Linux command-line tools. This involves tasks like removing duplicates, filtering data, merging 
@@ -9,21 +11,18 @@
    These tools help automate the manipulation of text and data files, making it easier to prepare data for analysis.
 
  - Example Workflow
- - 1. **Extract Data:** Using tools like wget or curl to download data from web sources
+ - 1. **Extract Data:** Using tools like (wget or curl) to download data from web sources
         wget http://example.com/data.csv
  
- - 2. **Clean Data:** Using sed and awk to clean and format the data
+ - 2. **Clean Data:** Using (sed and awk) to clean and format the data
         sed 's/old/new/g' data.csv | awk -F, '{print $1, $2, $3}'
 
- - 3. **Transform Data:** Using cut and paste to transform the data
+ - 3. **Transform Data:** Using (cut and paste) to transform the data
         cut -d, -f1,3 data.csv > transformed_data.csv
 
- - 4. **Load Data:** Using scp or rsync to load the data to a different server or system.
+ - 4. **Load Data:** Using (scp or rsync) to load the data to a different server or system.
         scp transformed_data.csv user@server:/path/to/destination
 
-      
-
- - # 06-06-2024
 
  - # **Command-Line Environment**
    ---

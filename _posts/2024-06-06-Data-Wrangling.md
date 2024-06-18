@@ -3,8 +3,7 @@
  title: Data-Wrangling
 ---
   # 06-06-2024 
-
- - # Data Wrangling 
+  
  - Data wrangling in Linux refers to the process of cleaning, transforming, and organizing raw data into,
    a more usable format using various Linux command-line tools. This involves tasks like removing duplicates, filtering data, merging 
    files, and reformatting data. Common tools used for data wrangling in Linux include `awk`, `sed`, `grep`, `cut`, `sort`, and `uniq`. 

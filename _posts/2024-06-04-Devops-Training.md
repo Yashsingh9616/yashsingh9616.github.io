@@ -81,14 +81,14 @@ date: 2024-06-03
          - df: Report file system disk space usage.
          - du: Estimate file space usage.
    
-   - 4. Networking:
+    - 4. Networking:
 
          - ping: Check the network connection to a server.
          - ifconfig: Configure a network interface.
          - scp: Securely copy files between hosts.
          - ssh: Secure Shell for remote login.
 
-   - 5. Scripting Specific:
+    - 5. Scripting Specific:
 
          - echo: Display a line of text.
          - read: Read a line of input.
@@ -96,6 +96,7 @@ date: 2024-06-03
          - chmod +x script.sh: Make a script executable.
          - ./script.sh: Execute the script.
 
+   ---
 
 
 - **What is FOSS?**
@@ -103,6 +104,7 @@ date: 2024-06-03
     - FOSS means Free and Open Source Software. It doesn’t mean the software is free of cost. 
       It means that the software's source code is open for all and anyone is free to use, study and modify the code.
       This principle allows others to contribute to developing and improving a software like a community.
+
 - **What is Open Source Software?**
    ---
     - Open Source Software is something that you can modify as per your needs, and share with others without,
@@ -131,22 +133,22 @@ date: 2024-06-03
    ---
     - PuTTY is a free and open-source terminal emulator, serial console, and network file transfer application. 
       It supports various network protocols, including SSH, Telnet, rlogin, and SCP. PuTTY is primarily used for securely connecting to remote servers and network devices.
-   - **Features:**
-      - Terminal Emulation
-      - Protocol Support
-      - Session Management
-      - Customization
-   - **Uses:**
-      - Remote Server Management
-      - Remote Server Management
+    - **Features:**
+       - Terminal Emulation
+       - Protocol Support
+       - Session Management
+       - Customization
+    - **Uses:**
+       - Remote Server Management
+       - Remote Server Management
 - **PuTTYgen**
-   ---
-    - PuTTYgen is a key generator tool for creating SSH keys, which are used to secure SSH connections.
-   - **Features:**
-      - Key Generation
-      - Key Conversion
-   - **Uses:**
-      - SSH Key Generation
-      - Key Management
-      - Key Conversion
+    ---
+     - PuTTYgen is a key generator tool for creating SSH keys, which are used to secure SSH connections.
+    - **Features:**
+       - Key Generation
+       - Key Conversion
+    - **Uses:**
+       - SSH Key Generation
+       - Key Management
+       - Key Conversion
     ---

@@ -2,7 +2,7 @@
  layout: post
  title: Data-Wrangling
 ---
-  # 06-06-2024 
+  - # **06-06-2024** 
   
  - Data wrangling in Linux refers to the process of cleaning, transforming, and organizing raw data into,
    a more usable format using various Linux command-line tools. This involves tasks like removing duplicates, filtering data, merging 

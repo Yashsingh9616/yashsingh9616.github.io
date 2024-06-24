@@ -21,6 +21,42 @@
    -    Example- S3 service in AWS Cloud , google drive, drop box and other cloud based online storage.
    -  **Heat (Orchestration):** Automates the deployment of infrastructure through templates.
    -  **Ceilometer (Telemetry):** Collects and stores usage data for billing and monitoring.
-   
-  
 
+   ---
+    - Installation
+
+    ---
+      - Update the system:
+        $ apt-get update -y
+        $ sudo apt update -y
+        $ sudo apt upgrade -y
+
+      - Install necessary dependencies:
+        $ sudo apt install -y python3-dev python3-pip git
+
+      - Install MicroStack
+
+      - Install Snap package manager (if not already installed):
+        $ sudo apt install snapd -y
+  
+      - Install MicroStack:
+        $ sudo snap install microstack --devmode --beta
+
+      - To list Microstack:
+        $ snap list microstack
+
+      - Initialize MicroStack:
+        $ sudo microstack init --auto --control 
+
+     - To check version ofmicrostack.openstack:
+       $ microstack.openstack --version
+
+     - To show all images of openstack:
+       $ microstack.openstack image list
+
+     - to get admin password, login dashboard at https://machine-ip:
+       $ sudo snap get microstack config.credentials.keystone-password
+
+        - Example: password openstack for 140 ip core: 3OykUhX6iskmBF8T6E0SI4L7kdex4E0N
+
+        

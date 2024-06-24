@@ -21,5 +21,6 @@
    -    Example- S3 service in AWS Cloud , google drive, drop box and other cloud based online storage.
    -  **Heat (Orchestration):** Automates the deployment of infrastructure through templates.
    -  **Ceilometer (Telemetry):** Collects and stores usage data for billing and monitoring.
+   
   
 

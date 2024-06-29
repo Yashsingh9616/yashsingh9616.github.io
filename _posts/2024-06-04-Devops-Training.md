@@ -6,7 +6,6 @@ date: 2024-06-03
  
 **This is my training content!**
 
-- # **Month Of June**
 
 - **What is kernel and its functions?**
     ---

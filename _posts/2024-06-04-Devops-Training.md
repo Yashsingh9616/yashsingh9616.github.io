@@ -29,6 +29,7 @@ date: 2024-06-03
      4. **System calls and security:** Receive requests for service from the processes.
 
 ---
+
     ---
 - **How to check the kernel version?**
    ---

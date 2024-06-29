@@ -134,7 +134,7 @@
           - Ctrl + a, d: Detach from the current session.
           - screen -X -S session_name quit: Kill a named session.
 
-      - **Window Management**
+       - **Window Management**
           - Ctrl + a, c: Create a new window.
           - Ctrl + a, n: Move to the next window.
           - Ctrl + a, p: Move to the previous window.

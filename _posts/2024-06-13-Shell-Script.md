@@ -2,7 +2,6 @@
  layout: post
  title: Shell-Scripting
 ---
- - # 13-06-2024
 
    - Shell scripting is a powerful way to automate tasks in Unix-based operating systems, including Linux and macOS.
      It involves writing scripts using shell commands to perform a sequence of operations automatically. Shell scripts can 

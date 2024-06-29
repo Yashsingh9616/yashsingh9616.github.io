@@ -27,6 +27,8 @@ date: 2024-06-03
         unit (CPU), when, and for how long.
      3. **Device drivers:** Act as mediator/interpreter between the hardware and processes.
      4. **System calls and security:** Receive requests for service from the processes.
+
+---
     ---
 - **How to check the kernel version?**
    ---

@@ -69,6 +69,7 @@
 
 
  ---
+ 
   - List Available server:
     - $ microstack.openstack server list
 
@@ -148,4 +149,4 @@
         
 
 
-        
+

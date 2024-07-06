@@ -59,4 +59,93 @@
 
         - Example: password openstack for 140 ip core: 3OykUhX6iskmBF8T6E0SI4L7kdex4E0N
 
+ ---
+  - **If you get erroe like this**
+      The request you have made requires authentication. (HTTP 401) (Request-ID: req-4f33ec46-4c40-4b30-888f-91d1a1dab1fc)  
+    
+      than you can use this command like this 
+
+    - $ sudo microstack init --auto --control --setup-loop-based-cinder-lvm-backend --loop-device-file-size 70
+
+
+ ---
+  - List Available server:
+    - $ microstack.openstack server list
+
+  - List Available Services:
+    - $ microstack.openstack service list
+
+  - List Projects:
+    - $ microstack.openstack project list
+
+  - Create a New Project:
+    - $ microstack.openstack project create myproject
+
+  - List Users:
+    - $ microstack.openstack user list
+
+  - Create a New User:
+    - $ microstack.openstack user create --project myproject --password mypassword myuser
+
+  - List Available Images:
+    - $ microstack.openstack image list
+
+  - Upload a new image
+    - $ microstack.openstack image create "Ubuntu 20.04" --file /path/to/ubuntu-20.04.qcow2 --disk-format qcow2 --container-format bare --public
+
+     **or**
+
+    - $ microstack.openstack image create "Ubuntu" --file /root/ubuntu-20.04.6-live-server-amd64.iso  
+  --disk-format qcow2 --container-format bare --public
+
+  - List Flavors:
+    - $ microstack.openstack flavor list
+
+  - Create a New Flavor:
+    - $ microstack.openstack flavor create --ram 2048 --disk 20 --vcpus 2 myflavor
+
+  - Create a Network:
+    - $ microstack.openstack network create mynetwork
+
+***********If you want to delete image,service,network,subnet, volume and so on************
+
+    - $  microstack.openstack network delete mynetwork
+
+  - Create a Subnet:
+    - $ microstack.openstack subnet create --network mynetwork --subnet-range 192.168.0.0/24 mysubnet
+
+  - Launch a New Instance:
+    - $ microstack.openstack server create --flavor myflavor --image "Ubuntu 20.04" --network mynetwork myinstance
+
+**or**
+
+    - $ microstack.openstack server create --flavor myflavor --image "Ubuntu" --network mynetwork myvm
+
+
+  - List Instances:
+    - $ microstack.openstack server list
+
+  - Show Instance Details:
+    - $ microstack.openstack server show myinstance
+
+  - Delete an Instance:
+    - $ microstack.openstack server delete myinstance
+
+  - List all volumes:
+    - $ microstack.openstack volume list
+
+  - Create a new volume:
+    - $  microstack.openstack volume create --size 10 newvolume
+
+  ***
+   Attach a Volume to an Instance
+  ***
+  - List all instances to find the instance ID:
+    - $ microstack.openstack server list
+
+  - Attach the volume to an instance:
+    - $ microstack.openstack server add volume <instance id> newvolume
+        
+
+
         

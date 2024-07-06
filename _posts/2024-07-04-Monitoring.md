@@ -3,6 +3,8 @@
  title: Monitoring
 ---
 
+---
+
  - Monitoring refers to the process of observing and checking the status and performance of systems, applications, 
    networks, or any other IT infrastructure components. The primary goal of monitoring is to ensure that these systems are functioning correctly, detect any issues or anomalies promptly, and gather data for performance analysis and optimization.
  
@@ -72,7 +74,7 @@
       - Imagine a monitoring tool that checks your website every minute to see if it’s online and how fast it’s 
         loading. The tool (teacher) asks the website (student) every minute, “Are you up? How fast are you loading?” 
 
-        
+
     - (2). Server Monitoring
       - A monitoring system regularly checks the status of a server to see how much CPU and memory it’s using. The 
         system (teacher) asks the server (student) every five minutes, “How much CPU are you using? How much memory are you using?” In both examples, the monitoring system is actively checking (pulling information) from the services to gather data about their current status.

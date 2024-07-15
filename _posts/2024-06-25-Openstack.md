@@ -23,27 +23,28 @@
    -  **Ceilometer (Telemetry):** Collects and stores usage data for billing and monitoring.
    -  **Trove (Database Service)** Trove is a database-as-a-service for OpenStack, providing scalable and reliable
         relational and non-relational database engines as a service.
-      **Ironic (Bare Metal Service)** Ironic is the OpenStack bare metal provisioning service. It is used to 
+   -  **Ironic (Bare Metal Service)** Ironic is the OpenStack bare metal provisioning service. It is used to 
         provision and manage physical machines instead of virtual machines.
-      **Sahara (Data Processing Service)** Sahara provides data processing services, allowing users to deploy and 
+   -  **Sahara (Data Processing Service)** Sahara provides data processing services, allowing users to deploy and 
          manage data processing frameworks like Hadoop, Spark, and Storm on OpenStack
-      **Zaqar (Messaging Service)** Zaqar is the messaging service for OpenStack, providing multi-tenant cloud 
+   -  **Zaqar (Messaging Service)** Zaqar is the messaging service for OpenStack, providing multi-tenant cloud 
         messaging for web developers to communicate between distributed applications.
-      **Barbican (Key Management Service)** Barbican is the key management service designed to manage and store 
+   -  **Barbican (Key Management Service)** Barbican is the key management service designed to manage and store 
         secrets, including passwords, encryption keys, and X.509 certificates.
-      **Designate (DNS Service)** Designate provides DNS-as-a-service, offering a REST API for managing DNS zones 
+   -  **Designate (DNS Service)** Designate provides DNS-as-a-service, offering a REST API for managing DNS zones 
         and record sets, and integrating with other OpenStack services.
-      **Magnum (Container Orchestration Service)**  Magnum provides container orchestration engines like Kubernetes, 
+   -  **Magnum (Container Orchestration Service)**  Magnum provides container orchestration engines like Kubernetes, 
         Swarm, and Mesos as first-class resources in OpenStack.
-      **Manila (Shared File Systems Service)** Manila provides shared file systems as a service, enabling users to 
+   -  **Manila (Shared File Systems Service)** Manila provides shared file systems as a service, enabling users to 
         provision and manage shared filesystems.
-      **Murano (Application Catalog Service)** Murano provides an application catalog, allowing users to deploy and 
+   -  **Murano (Application Catalog Service)** Murano provides an application catalog, allowing users to deploy and 
         manage applications in an OpenStack environment.
-      **Aodh (Telemetry Alarming Service)** Aodh provides the alarming service for OpenStack Telemetry, allowing 
+   -  **Aodh (Telemetry Alarming Service)** Aodh provides the alarming service for OpenStack Telemetry, allowing 
         users to set alarms based on defined rules against collected metering data.
-      ** Gnocchi (Time Series Database Service)** Gnocchi is a multi-tenant timeseries, metrics, and resources 
+   -  ** Gnocchi (Time Series Database Service)** Gnocchi is a multi-tenant timeseries, metrics, and resources 
          database. It is optimized for large-scale metric storage and retrieval.
 
+  ---
 
     # Resource Quotas
 
@@ -94,7 +95,7 @@
         - Security Group Rules: 20 per security group
         - Server Groups: 10
         - Server Group Members: 10
-      - Block Storage (Cinder)
+        - Block Storage (Cinder)
         - Volumes: 10
         - Snapshots: 10
         - Total Volume Storage: 1000 GB

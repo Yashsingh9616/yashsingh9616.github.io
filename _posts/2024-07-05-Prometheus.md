@@ -16,6 +16,7 @@
 
     - (2). **Time-Series Database:** Stores metrics data with a multi-dimensional data model (metric name and 
              key-value pairs called labels) that enables flexible queries and aggregation.
+           - Data is stored in a series of chunks, with each chunk representing a fixed time interval.
 
     - (3). **PromQL (Prometheus Query Language):** A powerful query language used to retrieve and analyze 
              time-series data stored in Prometheus.
@@ -55,6 +56,20 @@
              short-lived jobs or jobs that cannot be scraped directly by Prometheus.
 
 
+  - **Client Libraries**
+    - Client libraries are used to instrument application code to expose custom metrics. These libraries are 
+      available for various programming languages and make it easy to export application-specific metrics.
+
+     ---
+
+     - Available Libraries:
+
+       - Go: prometheus/client_golang
+       - Java: simpleclient
+       - Python: prometheus_client
+       - Ruby: prometheus-client
+
+
   - **Prometheus Workflow:**
 
    ---
@@ -80,6 +95,8 @@
     - (7). **Monitoring and Scaling:** Prometheus itself can be monitored using its own metrics exposed via /metrics 
              endpoint. For scaling, Prometheus supports federation and remote storage integrations.
 
+  
+  
 
 
 

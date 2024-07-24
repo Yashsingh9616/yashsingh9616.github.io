@@ -45,7 +45,7 @@
          database. It is optimized for large-scale metric storage and retrieval.
 
   
-    # Resource Quotas
+ - # Resource Quotas
 
   ---
 
@@ -84,7 +84,9 @@
       - Modify Quotas: Choose the project you want to modify quotas for, and then select 'Modify Quotas'. Adjust the 
         quotas as needed and save the changes.
 
-    - # Default quotas provided in OpenStack:
+  ---
+
+   # Default quotas provided in OpenStack:
 
       - Compute (Nova)
         - Instances: 10
@@ -114,11 +116,10 @@
         - Objects: 100,000
       - Total Object Storage: Unlimited (controlled by container and object count)
 
-   ---
 
-  # Installation
+ - # Installation
 
-    ---
+  ---
       - Update the system:
         $ apt-get update -y
         $ sudo apt update -y
@@ -152,11 +153,13 @@
 
         - Example: password openstack for 140 ip core: 3OykUhX6iskmBF8T6E0SI4L7kdex4E0N
 
- ---
+  ---
+
   - **If you get erroe like this**
-      The request you have made requires authentication. (HTTP 401) (Request-ID: req-4f33ec46-4c40-4b30-888f-91d1a1dab1fc)  
+    - The request you have made requires authentication. (HTTP 401) (Request-ID: 
+      req-4f33ec46-4c40-4b30-888f-91d1a1dab1fc)  
     
-      than you can use this command like this 
+    **than you can use this command like this** 
 
     - $ sudo microstack init --auto --control --setup-loop-based-cinder-lvm-backend --loop-device-file-size 70
 

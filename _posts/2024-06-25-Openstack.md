@@ -44,13 +44,13 @@
    -  **Gnocchi (Time Series Database Service)** Gnocchi is a multi-tenant timeseries, metrics, and resources 
          database. It is optimized for large-scale metric storage and retrieval.
 
-  ---
-
+  
     # Resource Quotas
 
   ---
 
-     - In OpenStack, a resource quota is a limit on the amount of resources that a project (or tenant) can consume. These quotas are used to manage and restrict the resources consumed by users to ensure fair usage and prevent any single user or project from exhausting resources that are shared among many users.
+     - In OpenStack, a resource quota is a limit on the amount of resources that a project (or tenant) can consume.
+       These quotas are used to manage and restrict the resources consumed by users to ensure fair usage and prevent any single user or project from exhausting resources that are shared among many users.
 
     - Key Concepts of Resource Quotas
       - Projects (Tenants): Quotas are typically applied at the project level. Each project can have its own set of 
@@ -114,11 +114,9 @@
         - Objects: 100,000
       - Total Object Storage: Unlimited (controlled by container and object count)
 
-
-
    ---
 
-    - # Installation
+  # Installation
 
     ---
       - Update the system:

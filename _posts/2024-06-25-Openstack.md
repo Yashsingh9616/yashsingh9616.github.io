@@ -155,7 +155,7 @@
 
   ---
 
-  - **If you get erroe like this**
+  - **If you get error like this**
     - The request you have made requires authentication. (HTTP 401) (Request-ID: 
       req-4f33ec46-4c40-4b30-888f-91d1a1dab1fc)  
     
@@ -243,7 +243,9 @@
   - Attach the volume to an instance:
     - $ microstack.openstack server add volume <<instance id>> newvolume
   
- - # overview of how to configure, view, and store logs for all core OpenStack services.
+  ---
+
+ - # Overview of how to configure, view, and store logs for all core OpenStack services.
   
   1. Keystone (Identity Service)
      - Configuration File: /etc/keystone/keystone.conf
@@ -286,7 +288,7 @@
      - Log File Location: /var/log/ironic/ironic.log
 
 
-  #  Live migration and Cold migration
+# **Live migration and Cold migration**
    
    
   - Live migration in OpenStack refers to the process of moving a running virtual machine (VM) or instance from one 
@@ -324,11 +326,11 @@ The live migration process generally involves:
 6. **Networking**: During migration, network connectivity must be maintained. This means the VM's network interfaces and configurations need to be replicated or reestablished on the destination host.
 
 
-### Cold Migration in OpenStack
+# Cold Migration in OpenStack
 
 **Cold migration** refers to moving a virtual machine (VM) or instance from one compute node to another while the instance is powered off. Unlike live migration, which allows the VM to remain operational during the migration, cold migration requires the VM to be in a shut-down state.
 
-#### Components and Services Involved in Cold Migration
+### Components and Services Involved in Cold Migration
 
 1. **Nova**: The OpenStack Compute service (Nova) manages the lifecycle of instances, including cold migration. Nova handles the scheduling and orchestration of cold migrations.
 

@@ -1,6 +1,6 @@
 ---
  layout: post
- title: sed-comman
+ title: sed-command
 ---
 
 `sed` (stream editor) is a Unix utility that parses and transforms text, using a simple, compact programming language. It's particularly useful for text substitution, deletion, and text file processing.

@@ -2,8 +2,8 @@
  layout: post
  title: Openstack
 ---
- - OpenStack is a free and open-source platform that allows you to create and manage public and private clouds.
-   It provides a range of software tools for managing compute, storage, and networking resources within a data center. OpenStack is designed to be highly scalable and flexible, enabling users to build and manage large-scale cloud environments.
+ - OpenStack is a free and open-source cloud computing platform that allows organizations to build and manage
+   public, private and hybrid cloud infrastructure (IaaS) . It provides a set of software tools for creating and managing compute, storage, and networking resources within a data center. 
 
 ---
  - # Core Components of OpenStack

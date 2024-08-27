@@ -166,82 +166,276 @@
 
  ---
 
-  - List Available server:
-    - $ microstack.openstack server list
+### **1. OpenStack CLI Basics**
 
-  - List Available Services:
-    - $ microstack.openstack service list
+Before using OpenStack commands, you typically need to source your OpenStack RC file to load the necessary environment variables for authentication.
 
-  - List Projects:
-    - $ microstack.openstack project list
+```bash
+source openstack-rc-file.sh
+```
 
-  - Create a New Project:
-    - $ microstack.openstack project create myproject
+### **2. Identity Service (Keystone) Commands**
 
-  - List Users:
-    - $ microstack.openstack user list
+Keystone is the identity service in OpenStack, which manages users, roles, and authentication.
 
-  - Create a New User:
-    - $ microstack.openstack user create --project myproject --password mypassword myuser
+- **Create a user:**
+  ```bash
+  openstack user create --domain default --password mypassword myuser
+  ```
 
-  - List Available Images:
-    - $ microstack.openstack image list
+- **List users:**
+  ```bash
+  openstack user list
+  ```
 
-  - Upload a new image
-    - $ microstack.openstack image create "Ubuntu 20.04" --file /path/to/ubuntu-20.04.qcow2 --disk-format qcow2 --container-format bare --public
+- **Create a project:**
+  ```bash
+  openstack project create --domain default myproject
+  ```
 
-     **or**
+- **List projects:**
+  ```bash
+  openstack project list
+  ```
 
-    - $ microstack.openstack image create "Ubuntu" --file /root/ubuntu-20.04.6-live-server-amd64.iso  
-  --disk-format qcow2 --container-format bare --public
+- **Assign a role to a user:**
+  ```bash
+  openstack role add --project myproject --user myuser myrole
+  ```
 
-  - List Flavors:
-    - $ microstack.openstack flavor list
+- **List roles:**
+  ```bash
+  openstack role list
+  ```
 
-  - Create a New Flavor:
-    - $ microstack.openstack flavor create --ram 2048 --disk 20 --vcpus 2 myflavor
+### **3. Compute Service (Nova) Commands**
 
-  - Create a Network:
-    - $ microstack.openstack network create mynetwork
+Nova is the compute service in OpenStack, which manages virtual machines.
 
- # ***********If you want to delete image,service,network,subnet, volume and so on************
+- **List available flavors (VM sizes):**
+  ```bash
+  openstack flavor list
+  ```
 
-    - $  microstack.openstack network delete mynetwork
+- **Create a server (VM):**
+  ```bash
+  openstack server create --flavor m1.small --image cirros --network private myserver
+  ```
 
-  - Create a Subnet:
-    - $ microstack.openstack subnet create --network mynetwork --subnet-range 192.168.0.0/24 mysubnet
+- **List servers:**
+  ```bash
+  openstack server list
+  ```
 
-  - Launch a New Instance:
-    - $ microstack.openstack server create --flavor myflavor --image "Ubuntu 20.04" --network mynetwork myinstance
+- **Show details of a specific server:**
+  ```bash
+  openstack server show myserver
+  ```
 
-# **or**
+- **Reboot a server:**
+  ```bash
+  openstack server reboot myserver
+  ```
 
-    - $ microstack.openstack server create --flavor myflavor --image "Ubuntu" --network mynetwork myvm
+- **Delete a server:**
+  ```bash
+  openstack server delete myserver
+  ```
 
+### **4. Image Service (Glance) Commands**
 
-  - List Instances:
-    - $ microstack.openstack server list
+Glance is the image service in OpenStack, which manages disk images.
 
-  - Show Instance Details:
-    - $ microstack.openstack server show myinstance
+- **List images:**
+  ```bash
+  openstack image list
+  ```
 
-  - Delete an Instance:
-    - $ microstack.openstack server delete myinstance
+- **Upload a new image:**
+  ```bash
+  openstack image create "myimage" --file /path/to/image/file --disk-format qcow2 --container-format bare
+  ```
 
-  - List all volumes:
-    - $ microstack.openstack volume list
+- **Show details of an image:**
+  ```bash
+  openstack image show myimage
+  ```
 
-  - Create a new volume:
-    - $  microstack.openstack volume create --size 10 newvolume
+- **Delete an image:**
+  ```bash
+  openstack image delete myimage
+  ```
 
-  ***
-   Attach a Volume to an Instance
-  ***
-  - List all instances to find the instance ID:
-    - $ microstack.openstack server list
+### **5. Block Storage Service (Cinder) Commands**
 
-  - Attach the volume to an instance:
-    - $ microstack.openstack server add volume <<instance id>> newvolume
+Cinder provides block storage management in OpenStack.
+
+- **List volumes:**
+  ```bash
+  openstack volume list
+  ```
+
+- **Create a volume:**
+  ```bash
+  openstack volume create --size 10 myvolume
+  ```
+
+- **Attach a volume to a server:**
+  ```bash
+  openstack server add volume myserver myvolume
+  ```
+
+- **Detach a volume from a server:**
+  ```bash
+  openstack server remove volume myserver myvolume
+  ```
+
+- **Delete a volume:**
+  ```bash
+  openstack volume delete myvolume
+  ```
+
+### **6. Networking Service (Neutron) Commands**
+
+Neutron is the networking service in OpenStack, which manages networks, subnets, and routers.
+
+- **List networks:**
+  ```bash
+  openstack network list
+  ```
+
+- **Create a network:**
+  ```bash
+  openstack network create mynetwork
+  ```
+
+- **List subnets:**
+  ```bash
+  openstack subnet list
+  ```
+
+- **Create a subnet:**
+  ```bash
+  openstack subnet create --network mynetwork --subnet-range 192.168.1.0/24 mysubnet
+  ```
+
+- **List routers:**
+  ```bash
+  openstack router list
+  ```
+
+- **Create a router:**
+  ```bash
+  openstack router create myrouter
+  ```
+
+- **Add an interface to a router:**
+  ```bash
+  openstack router add subnet myrouter mysubnet
+  ```
+
+- **Set a router gateway:**
+  ```bash
+  openstack router set --external-gateway public myrouter
+  ```
+
+- **Delete a router:**
+  ```bash
+  openstack router delete myrouter
+  ```
+
+### **7. Object Storage Service (Swift) Commands**
+
+Swift is the object storage service in OpenStack.
+
+- **List containers:**
+  ```bash
+  openstack container list
+  ```
+
+- **Create a container:**
+  ```bash
+  openstack container create mycontainer
+  ```
+
+- **Upload an object to a container:**
+  ```bash
+  openstack object create mycontainer myfile.txt
+  ```
+
+- **List objects in a container:**
+  ```bash
+  openstack object list mycontainer
+  ```
+
+- **Download an object from a container:**
+  ```bash
+  openstack object save mycontainer myfile.txt
+  ```
+
+- **Delete an object:**
+  ```bash
+  openstack object delete mycontainer myfile.txt
+  ```
+
+### **8. Orchestration Service (Heat) Commands**
+
+Heat is the orchestration service in OpenStack, which allows you to deploy complex cloud applications via templates.
+
+- **List stacks:**
+  ```bash
+  openstack stack list
+  ```
+
+- **Create a stack:**
+  ```bash
+  openstack stack create --template mytemplate.yaml mystack
+  ```
+
+- **Show details of a stack:**
+  ```bash
+  openstack stack show mystack
+  ```
+
+- **Update a stack:**
+  ```bash
+  openstack stack update --template mytemplate.yaml mystack
+  ```
+
+- **Delete a stack:**
+  ```bash
+  openstack stack delete mystack
+  ```
+
+### **9. Dashboard Service (Horizon) Commands**
+
+Horizon provides a web-based user interface to OpenStack services.
+
+- **Accessing Horizon:**
+  - You can access Horizon by navigating to the appropriate URL in your web browser. The default URL is usually something like `http://your-openstack-ip/horizon`.
+
+### **10. Other Useful Commands**
+
+- **Show API versions:**
+  ```bash
+  openstack version list
+  ```
+
+- **List available services:**
+  ```bash
+  openstack service list
+  ```
+
+- **Show quotas:**
+  ```bash
+  openstack quota show myproject
+  ```
+
+- **Show usage:**
+  ```bash
+  openstack usage show myproject
+  ```
+
   
   ---
 

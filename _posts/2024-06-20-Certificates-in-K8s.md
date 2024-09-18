@@ -202,3 +202,5 @@ Certificate-related issues can cause components to fail to communicate securely.
   curl --cacert /etc/kubernetes/pki/ca.crt --cert /etc/kubernetes/pki/apiserver.crt --key /etc/kubernetes/pki/apiserver.key https://<api-server>:6443/healthz
   ```
 
+##################################################################################################################
+

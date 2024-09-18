@@ -1,6 +1,6 @@
 ---
  layout: post
- title: Active-director
+ title: Active-directory
 ---
 
 **Active Directory (AD)** is a directory service developed by Microsoft for Windows domain networks. It provides a central repository for managing and organizing users, computers, groups, and other resources in a network. Active Directory handles authentication, authorization, and directory services, allowing administrators to control access to resources, enforce policies, and manage the network structure efficiently.

@@ -4,7 +4,6 @@
 ---
 
 
-### **Certificates in Kubernetes**
 
 Kubernetes uses certificates extensively to secure communication between its components and to authenticate clients and servers. Understanding the types of certificates, how to generate and manage them, and how to renew them is crucial for maintaining a secure and operational cluster.
 
@@ -99,7 +98,7 @@ Kubernetes uses certificates extensively to secure communication between its com
 
 
 
-    ### **Guide on generating new certificates using `kubeadm`, replacing old certificates with new ones, and troubleshooting common certificate-related issues in Kubernetes.**
+   -  # **Guide on generating new certificates using `kubeadm`, replacing old certificates with new ones, and troubleshooting common certificate-related issues in Kubernetes.**
 
 ### **1. Generating New Certificates Using Kubeadm**
 

@@ -133,7 +133,7 @@ networking:
 ORRRRRR
 
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 apiVersion: v1
 baseDomain: example.com 
@@ -146,26 +146,26 @@ controlPlane:
       - us-west-2a
       - us-west-2b
       rootVolume:
-        iops: 400			--->>input-output
-        size: 100			--->> 100 GB
-        type: io1			--->> just like flaour(ex. t2micro)
+        iops: 4000
+        size: 500
+        type: io1
       type: m5.xlarge 
-  replicas: 1				-->> 1 master node
+  replicas: 3
 compute: 
 - hyperthreading: Enabled 
   name: worker
   platform:
     aws:
       rootVolume:
-        iops: 200
-        size: 100
+        iops: 2000
+        size: 500
         type: io1 
       type: c5.4xlarge
       zones:
       - us-west-2c
   replicas: 3
 metadata:
-  name: test-cluster
+  name: test-cluster 
 networking:
   clusterNetwork:
   - cidr: 10.128.0.0/14
@@ -180,11 +180,11 @@ platform:
     userTags:
       adminContact: jdoe
       costCenter: 7536
-pullSecret: '{"auths": ...}'        
-sshKey: ssh-ed25519 AAAA...
+pullSecret: '{"auths": ...}' 
+sshKey: ssh-ed25519 AAAA... 
 
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
